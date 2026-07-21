@@ -1,0 +1,249 @@
+/* Stile Generale ed Eleganza Editoriale */
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #111111;
+    background-color: #fcfcfc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Tipografia delle Testate */
+h1, h2, h3, .site-title {
+    font-family: "Playfair Display", "Didot", "Georgia", serif;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.2;
+}
+
+/* Stile per l'Header con Banner Logo */
+header {
+    border-bottom: 2px solid #111111;
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.site-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 180px; /* Limita l'altezza per non occupare troppo spazio verticale */
+    display: block;
+    margin: 0 auto;
+    transition: opacity 0.2s ease;
+}
+
+.site-logo:hover {
+    opacity: 0.9;
+}
+
+/* Nasconde visivamente il titolo testuale mantenendolo per screen-reader/SEO */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.site-description {
+    font-style: italic;
+    color: #555555;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Elenco Notizie (Home) */
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-item {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 1.5rem;
+}
+
+.post-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #666666;
+    margin-bottom: 0.5rem;
+}
+
+.post-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+/* Allineamento e sillabazione per articoli in inglese */
+.post-content,
+.post-content p {
+    text-align: justify;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; /* Sillabazione automatica in inglese */
+}
+
+/* Mantieni i titoli, le intestazioni e i meta-dati allineati a sinistra */
+.site-title,
+.site-description,
+.latest-title,
+article h1,
+h1, h2, h3,
+.post-meta,
+.archive-title,
+.archive-item {
+    text-align: left;
+}
+
+/* Stile dell'Articolo Singolo */
+article h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+article .post-meta {
+    margin-bottom: 2rem;
+}
+
+/* Stile Footer */
+footer {
+    border-top: 1px solid #111111;
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-nav a {
+    color: #111111;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-credit {
+    color: #666666;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Elenco donazioni */
+.donation-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.donation-links li {
+    margin-bottom: 0.8rem;
+}
+
+.donation-links a {
+    color: #0b253c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.donation-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Stile specifico per l'ultimo post in Home Page */
+.latest-news {
+    margin-bottom: 4rem;
+}
+
+.latest-title {
+    font-size: 2.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Linea di separazione sobria per l'archivio */
+.archive-separator {
+    border: 0;
+    height: 1px;
+    background: #dddddd;
+    margin: 4rem 0 2rem 0;
+}
+
+/* Stile dell'Archivio Storico */
+.archive-section {
+    margin-top: 2rem;
+}
+
+.archive-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    border-left: 3px solid #000000;
+    padding-left: 10px;
+}
+
+.archive-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.archive-item {
+    font-size: 1.05rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+.archive-date {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.85rem;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+.archive-link {
+    color: #111111;
+    text-decoration: none;
+    border-bottom: 1px dashed #cccccc;
+}
+
+.archive-link:hover {
+    color: #000000;
+    border-bottom: 1px solid #000000;
+}

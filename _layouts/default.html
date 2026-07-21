@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+    <!-- Web App Manifest & Favicon -->
+    <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ '/assets/images/6am_logo_square_US.png' | relative_url }}">
+
+    <!-- Tag per iOS Springboard / Web App -->
+    <link rel="apple-touch-icon" href="{{ '/assets/images/6am_logo_square_US.png' | relative_url }}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="6am">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+    <a href="{{ '/' | relative_url }}" class="logo-link">
+        <img src="{{ '/assets/images/6am_banner.png' | relative_url }}" 
+             alt="6am — il mondo, alle sei" 
+             class="site-logo">
+    </a>
+    <!-- Tag SEO accessibile -->
+    <h1 class="sr-only">{{ site.title }}</h1>
+         </header>
+
+        <main>
+            {{ content }}
+        </main>
+
+        <footer>
+          <nav class="footer-nav">
+            <a href="{{ '/' | relative_url }}">Home</a> &bull; 
+            <a href="{{ '/about/' | relative_url }}">Su di noi</a>
+          </nav>
+          <p class="footer-credit">&copy; {{ site.time | date: '%Y' }} 6am — il mondo, alle sei</p>
+        </footer>
+
+    </div>
+</body>
+</html>

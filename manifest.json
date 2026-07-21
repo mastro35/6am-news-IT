@@ -1,0 +1,18 @@
+---
+---
+{
+  "name": "6am — Il mondo, alle sei",
+  "short_name": "6am",
+  "start_url": "{{ '/' | relative_url }}",
+  "display": "standalone",
+  "background_color": "#fcfcfc",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "{{ '/assets/images/6am_logo_square.png' | relative_url }}",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

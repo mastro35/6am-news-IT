@@ -1,0 +1,5 @@
+.env
+6am.sh
+config.edn
+logs
+*.jar
