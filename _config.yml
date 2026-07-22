@@ -3,3 +3,5 @@ description: Tutto quello che devi sapere, preparato per te ogni giorno alle sei
 theme: null
 permalink: /posts/:year-:month-:day/
 markdown: kramdown
+plugins:
+  - jekyll-feed
