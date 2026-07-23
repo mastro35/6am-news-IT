@@ -6,15 +6,20 @@ title: Today
 {% assign latest_post = site.posts.first %}
 
 {% if latest_post %}
-  <!-- IL NOTIZIARIO DI OGGI -->
-  <article class="latest-news">
-    <div class="post-meta">{{ latest_post.date | date: "%d %B %Y" }}</div>
-        
-    <div class="post-content" style="margin-top: 2rem;">
+  <article class="post">
+    <header class="post-header">
+      <time class="post-date">{{ latest_post.date | date: "%B %d, %Y" }}</time>
+      
+    </header>
+
+    <div class="post-content">
       {{ latest_post.content }}
     </div>
   </article>
-{% else %}
-  <p>non c'è nulla da vedere qui, circolare!</p>
+
+  <div class="archive-footer-link">
+    <a href="{{ '/archive/' | relative_url }}">← Consulta tutte le uscite precedenti nell'archivio</a>
+  </div>
 {% endif %}
+
 
