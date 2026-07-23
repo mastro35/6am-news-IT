@@ -23,11 +23,11 @@ h1, h2, h3, .site-title {
     line-height: 1.2;
 }
 
-/* Stile per l'Header con Banner Logo */
+/* Stile per l'Header con Menu integrato */
 header {
     border-bottom: 2px solid #111111;
-    padding-bottom: 1.5rem;
-    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2.5rem;
     text-align: center;
 }
 
@@ -39,14 +39,37 @@ header {
 .site-logo {
     max-width: 100%;
     height: auto;
-    max-height: 180px; /* Limita l'altezza per non occupare troppo spazio verticale */
+    max-height: 180px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
     transition: opacity 0.2s ease;
 }
 
 .site-logo:hover {
     opacity: 0.9;
+}
+
+/* Stile per la barra di navigazione superiore */
+.main-nav {
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.main-nav a {
+    color: #111111;
+    text-decoration: none;
+    padding: 0 0.4rem;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.nav-divider {
+    color: #888888;
 }
 
 /* Nasconde visivamente il titolo testuale mantenendolo per screen-reader/SEO */
@@ -248,6 +271,127 @@ footer {
     border-bottom: 1px solid #000000;
 }
 
+/* Stile Pagina Archivio */
+.archive-container {
+    margin-top: 1rem;
+}
+
+.archive-intro {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.archive-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.archive-list li {
+    display: flex;
+    align-items: baseline;
+    padding: 0.6rem 0;
+    border-bottom: 1px dashed #e1e1e1;
+}
+
+.archive-date {
+    font-family: monospace, sans-serif;
+    font-size: 0.85rem;
+    color: #666;
+    width: 140px;
+    flex-shrink: 0;
+}
+
+.archive-link {
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.archive-link:hover {
+    text-decoration: underline;
+}
+
+/* Link a fine post nella Home */
+.archive-footer-link {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #111;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.archive-footer-link a {
+    color: #111;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.archive-footer-link a:hover {
+    text-decoration: underline;
+}
+
+/* Stile Pagina Archivio */
+.archive-container {
+    margin-top: 1rem;
+}
+
+.archive-intro {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.archive-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.archive-list li {
+    display: flex;
+    align-items: baseline;
+    padding: 0.6rem 0;
+    border-bottom: 1px dashed #e1e1e1;
+}
+
+.archive-date {
+    font-family: monospace, sans-serif;
+    font-size: 0.85rem;
+    color: #666;
+    width: 140px;
+    flex-shrink: 0;
+}
+
+.archive-link {
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.archive-link:hover {
+    text-decoration: underline;
+}
+
+/* Link a fine post nella Home */
+.archive-footer-link {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #111;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.archive-footer-link a {
+    color: #111;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.archive-footer-link a:hover {
+    text-decoration: underline;
+}
 /* Stile Pagina Archivio */
 .archive-container {
     margin-top: 1rem;
