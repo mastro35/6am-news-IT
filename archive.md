@@ -13,7 +13,7 @@ permalink: /archive/
       <li>
         <a href="{{ post.url | relative_url }}" class="archive-link">
             <time class="archive-date" datetime="{{ post.date | date_to_xmlschema }}">
-                {{ post.date | date: "%B %d, %Y" }}
+                {{ post.date | date: "%d/%m/%Y" }}
             </time>
         </a>
       </li>
