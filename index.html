@@ -18,20 +18,3 @@ title: Today
   <p>non c'è nulla da vedere qui, circolare!</p>
 {% endif %}
 
-<hr class="archive-separator">
-
-<!-- ARCHIVIO STORICO -->
-<section class="archive-section">
-  <h2 class="archive-title">Historical Archive</h2>
-  <ul class="archive-list">
-    {% for post in site.posts %}
-      <!-- Saltiamo il primo post perché è già mostrato per intero sopra -->
-      {% if forloop.first %}{% continue %}{% endif %}
-
-      <li class="archive-item">
-        <a class="archive-link" href="{{ post.url | relative_url }}">{{ post.date | date: "%d %B %Y" }}</a>
-      </li>
-    
-    {% endfor %}
-  </ul>
-</section>

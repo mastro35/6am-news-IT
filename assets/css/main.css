@@ -247,3 +247,64 @@ footer {
     color: #000000;
     border-bottom: 1px solid #000000;
 }
+
+/* Stile Pagina Archivio */
+.archive-container {
+    margin-top: 1rem;
+}
+
+.archive-intro {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.archive-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.archive-list li {
+    display: flex;
+    align-items: baseline;
+    padding: 0.6rem 0;
+    border-bottom: 1px dashed #e1e1e1;
+}
+
+.archive-date {
+    font-family: monospace, sans-serif;
+    font-size: 0.85rem;
+    color: #666;
+    width: 140px;
+    flex-shrink: 0;
+}
+
+.archive-link {
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.archive-link:hover {
+    text-decoration: underline;
+}
+
+/* Link a fine post nella Home */
+.archive-footer-link {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #111;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.archive-footer-link a {
+    color: #111;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.archive-footer-link a:hover {
+    text-decoration: underline;
+}

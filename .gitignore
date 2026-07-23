@@ -3,3 +3,4 @@
 config.edn
 logs
 *.jar
+.DS_Store
