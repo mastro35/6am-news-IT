@@ -23,6 +23,13 @@ h1, h2, h3, .site-title {
     line-height: 1.2;
 }
 
+h1,
+h2,
+h3,
+.site-title {
+    font-family: "Newsreader", Georgia, serif;
+}
+
 /* Stile per l'Header con Menu integrato */
 header {
     border-bottom: 2px solid #111111;
